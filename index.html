@@ -62,6 +62,55 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-hexo-blog" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/09/22/hexo-blog/" class="article-date">
+  <time datetime="2019-09-21T16:20:08.000Z" itemprop="datePublished">2019-09-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/22/hexo-blog/">Hexo+GitHub，建立Github博客</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一-Windows安装Hexo-GitHub，建立Github博客"><a href="#一-Windows安装Hexo-GitHub，建立Github博客" class="headerlink" title="一 Windows安装Hexo+GitHub，建立Github博客"></a>一 Windows安装Hexo+GitHub，建立Github博客</h2><p>参考：<a href="https://zhuanlan.zhihu.com/p/35668237" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/35668237</a><br>       <a href="https://zhuanlan.zhihu.com/p/80140564" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/80140564</a></p>
+<ol>
+<li>安装nodejs</li>
+<li>安装Git</li>
+<li>建立<a href="https://mingziday.github.io/">https://mingziday.github.io/</a></li>
+<li>安装Hexo<br>在E:\blogworkspace目录下打开git bash<br>npm i hexo-cli -g  安装Hexo<br>hexo init 初始化文件夹<br>npm install安装必备的组件。<br>npm i hexo-deployer-git 安装发布扩展<br>hexo new post “article title” 新建一篇文章<br>hexo g 生成静态网页<br>hexo s<br>打开本地服务器，浏览器预览 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a></li>
+<li>将本地的静态网页发布到GitHub<br>如下步骤生产sshkey<br>git config –global user.name “用户名”<br>git config –global user.email “邮箱名@qq.com”<br>ssh-keygen -t rsa -C “邮箱名@qq.com”<br>在github头像下面点击settings，再点击SSH and GPG keys，新建一个SSH，title任意，内容为：<br>cat ~/.ssh/id_rsa.pub<br>hexo d 发布到github<br>在 <a href="https://mingziday.github.io/">https://mingziday.github.io/</a> 预览</li>
+</ol>
+<h2 id="二-博客美化小技巧"><a href="#二-博客美化小技巧" class="headerlink" title="二 博客美化小技巧"></a>二 博客美化小技巧</h2><ol>
+<li>添加图片<br>_config.yml里的psot_asset_folder:设置为true<br>npm install hexo-asset-image –save  ：再用命令生成md博客时，会建立一个目录用来存图片</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mingziday.github.io/2019/09/22/hexo-blog/" data-id="ck0trp7ml0000isuih39y5ajk" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-env-step" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/09/21/env-step/" class="article-date">
@@ -121,7 +170,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mingziday.github.io/2019/09/21/env-step/" data-id="ck0trgzii0000p8uitqrpc50q" class="article-share-link">Share</a>
+      <a data-url="http://mingziday.github.io/2019/09/21/env-step/" data-id="ck0trlqci0001kwuiymtv3ja7" class="article-share-link">Share</a>
       
       
     </footer>
@@ -170,7 +219,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mingziday.github.io/2019/09/21/hello-world/" data-id="ck0trgzin0001p8uiliytvrqh" class="article-share-link">Share</a>
+      <a data-url="http://mingziday.github.io/2019/09/21/hello-world/" data-id="ck0trlqcd0000kwuivlsrtra7" class="article-share-link">Share</a>
       
       
     </footer>
@@ -190,9 +239,23 @@
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
@@ -209,6 +272,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2019/09/22/hexo-blog/">Hexo+GitHub，建立Github博客</a>
+          </li>
         
           <li>
             <a href="/2019/09/21/env-step/">开发环境搭建步骤</a>
