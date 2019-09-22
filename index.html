@@ -90,87 +90,20 @@
 <li>安装Git</li>
 <li>建立<a href="https://mingziday.github.io/">https://mingziday.github.io/</a></li>
 <li>安装Hexo<br>在E:\blogworkspace目录下打开git bash<br>npm i hexo-cli -g  安装Hexo<br>hexo init 初始化文件夹<br>npm install安装必备的组件。<br>npm i hexo-deployer-git 安装发布扩展<br>hexo new post “article title” 新建一篇文章<br>hexo g 生成静态网页<br>hexo s<br>打开本地服务器，浏览器预览 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a></li>
-<li>将本地的静态网页发布到GitHub<br>如下步骤生产sshkey<br>git config –global user.name “用户名”<br>git config –global user.email “邮箱名@qq.com”<br>ssh-keygen -t rsa -C “邮箱名@qq.com”<br>在github头像下面点击settings，再点击SSH and GPG keys，新建一个SSH，title任意，内容为：<br>cat ~/.ssh/id_rsa.pub<br>hexo d 发布到github<br>在 <a href="https://mingziday.github.io/">https://mingziday.github.io/</a> 预览</li>
+<li>将本地的静态网页发布到GitHub<br>如下步骤生产sshkey<br>git config –global user.name “用户名”<br>git config –global user.email “邮箱名@qq.com”<br>ssh-keygen -t rsa -C “邮箱名@qq.com”<br>在github头像下面点击settings，再点击SSH and GPG keys，新建一个SSH，title任意，内容为：<br>cat ~/.ssh/id_rsa.pub<br>hexo cl 清理<br>hexo d 发布到github，第一次发布需要输入用户名密码<br>在 <a href="https://mingziday.github.io/">https://mingziday.github.io/</a> 预览</li>
 </ol>
 <h2 id="二-博客美化小技巧"><a href="#二-博客美化小技巧" class="headerlink" title="二 博客美化小技巧"></a>二 博客美化小技巧</h2><ol>
-<li>添加图片<br>_config.yml里的psot_asset_folder:设置为true<br>npm install hexo-asset-image –save  ：再用命令生成md博客时，会建立一个目录用来存图片</li>
+<li>添加图片<br>_config.yml里的psot_asset_folder:设置为true<br>npm install hexo-asset-image –save  ：再用命令生成md博客时，会建立一个目录用来存图片，这个插件版本为005才行<br>注意图片文件的后缀，传到服务器自动变成了1.JPG</li>
 </ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mingziday.github.io/2019/09/22/hexo-blog/" data-id="ck0tsnwb60001z4uieuq9i162" class="article-share-link">Share</a>
+      <a data-url="http://mingziday.github.io/2019/09/22/hexo-blog/" data-id="ck0v303ri0000msuiw6xqfrb3" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-env-step" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/21/env-step/" class="article-date">
-  <time datetime="2019-09-21T13:53:06.000Z" itemprop="datePublished">2019-09-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/21/env-step/">开发环境搭建步骤</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="硬件准备："><a href="#硬件准备：" class="headerlink" title="硬件准备："></a>硬件准备：</h2><p>一个老的toshiba东芝笔记本，硬盘200G，内存2G，安装fedora服务器<br>一个新的Dell笔记本，硬盘200G，内存4G，安装windows 10家庭版，作为开发机</p>
-<h2 id="一-安装Fedora30"><a href="#一-安装Fedora30" class="headerlink" title="一 安装Fedora30"></a>一 安装Fedora30</h2><ol>
-<li>下载Fedora Server  30，地址：<a href="http://getfedora.org" target="_blank" rel="noopener">http://getfedora.org</a></li>
-<li>用PowerIOS制作USB启动盘，用UltraISO制作的时候没有成功</li>
-<li>从U盘安装Fedora，注意语言、分区、软件选择、网络配置</li>
-<li>安装完成之后通过网络远程管理服务器：<a href="https://192.168.31.236:9090/system" target="_blank" rel="noopener">https://192.168.31.236:9090/system</a><br><img src="/2019/09/21/env-step/1.JPG" alt></li>
-</ol>
-<h2 id="二-安装图形界面"><a href="#二-安装图形界面" class="headerlink" title="二 安装图形界面"></a>二 安装图形界面</h2><p>默认Fedora Server 是不安装图形界面的，renlevel=1，用如下命令安装GNOME<br>yum groups install  “GNOME”<br>需要安装518个软件包，安装完成后启动：<br>startx<br>启动图形界面看起来还不错，以后应该没啥用</p>
-<h2 id="三-解决笔记本合上盖子后Fedora网络自动断开的问题"><a href="#三-解决笔记本合上盖子后Fedora网络自动断开的问题" class="headerlink" title="三 解决笔记本合上盖子后Fedora网络自动断开的问题"></a>三 解决笔记本合上盖子后Fedora网络自动断开的问题</h2><p>笔记本安装Fedora之后，之后都是通过ssh远程管理，要保证网络一直能通才行</p>
-<ol>
-<li>修改配置文件/etc/systemd/logind.conf<br>HandleLidSwitch=ignore</li>
-<li>重启服务生效<br>systemctl restart systemd-logind.service</li>
-</ol>
-<h2 id="四-配置Fedora-SSH"><a href="#四-配置Fedora-SSH" class="headerlink" title="四 配置Fedora SSH"></a>四 配置Fedora SSH</h2><ol>
-<li>检查ssh安装情况，默认已经安装<br>rpm -qa | grep openssh-server</li>
-<li>修改配置文件/etc/ssh/sshd_conf，打开下面内容的注释<br>Port 22<br>Protocol 2,1</li>
-<li>重启ssh服务<br>systemctl restart sshd</li>
-<li>设置sshd开机启动（未设置）<br>systemctl enable sshd</li>
-<li>防火墙（内网访问，未设置）<br>/etc/syscofig/iptables</li>
-</ol>
-<p>-A INPUT -m state –state NEW -p tcp –dport 22 -j ACCEPT<br>systemctl restart iptables</p>
-<h2 id="五-Windows-安装SSH工具"><a href="#五-Windows-安装SSH工具" class="headerlink" title="五 Windows 安装SSH工具"></a>五 Windows 安装SSH工具</h2><ol>
-<li>下载Xmanager（未激活）</li>
-<li>配置XShell，测试链接通过</li>
-</ol>
-<h2 id="六-安装Windows必备工具"><a href="#六-安装Windows必备工具" class="headerlink" title="六 安装Windows必备工具"></a>六 安装Windows必备工具</h2><ol>
-<li>notepad++</li>
-<li>clover</li>
-<li>Wox</li>
-<li>everything</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://mingziday.github.io/2019/09/21/env-step/" data-id="ck0tsnwb90002z4ui5kbynrls" class="article-share-link">Share</a>
-      
-      
     </footer>
   </div>
   
@@ -217,7 +150,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mingziday.github.io/2019/09/21/hello-world/" data-id="ck0tsnwb10000z4uirf8lxbbz" class="article-share-link">Share</a>
+      <a data-url="http://mingziday.github.io/2019/09/21/hello-world/" data-id="ck0v303rz0003msui2mlqddiv" class="article-share-link">Share</a>
       
       
     </footer>
@@ -273,10 +206,6 @@
         
           <li>
             <a href="/2019/09/22/hexo-blog/">Hexo+GitHub，建立Github博客</a>
-          </li>
-        
-          <li>
-            <a href="/2019/09/21/env-step/">开发环境搭建步骤</a>
           </li>
         
           <li>
