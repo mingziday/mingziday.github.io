@@ -5,20 +5,22 @@
   
 
   
-  <title>Hexo+GitHub，建立Github博客 | mingziday的博客</title>
+  <title>docker-env | mingziday的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一 Windows安装Hexo+GitHub，建立Github博客参考：https://zhuanlan.zhihu.com/p/35668237       https://zhuanlan.zhihu.com/p/80140564  安装nodejs 安装Git 建立https://mingziday.github.io/ 安装Hexo在E:\blogworkspace目录下打开git bas">
-<meta name="keywords" content="Hexo">
+  <meta name="description" content="Fedora安装Docker 执行安装命令yum -y install docker     检查版本docker –version   启动 docker 进程。$ sudo systemctl start docker  开机时自动启动 Docker$ sudo systemctl enable docker">
+<meta name="keywords" content="docker">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo+GitHub，建立Github博客">
-<meta property="og:url" content="http://mingziday.github.io/2019/09/22/hexo-blog/index.html">
+<meta property="og:title" content="docker-env">
+<meta property="og:url" content="http://mingziday.github.io/2019/09/24/docker-env/index.html">
 <meta property="og:site_name" content="mingziday的博客">
-<meta property="og:description" content="一 Windows安装Hexo+GitHub，建立Github博客参考：https://zhuanlan.zhihu.com/p/35668237       https://zhuanlan.zhihu.com/p/80140564  安装nodejs 安装Git 建立https://mingziday.github.io/ 安装Hexo在E:\blogworkspace目录下打开git bas">
+<meta property="og:description" content="Fedora安装Docker 执行安装命令yum -y install docker     检查版本docker –version   启动 docker 进程。$ sudo systemctl start docker  开机时自动启动 Docker$ sudo systemctl enable docker">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2019-09-22T02:16:58.995Z">
+<meta property="og:image" content="http://mingziday.github.io/2019/09/24/docker-env/1.JPG">
+<meta property="og:updated_time" content="2019-09-23T16:14:16.290Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo+GitHub，建立Github博客">
-<meta name="twitter:description" content="一 Windows安装Hexo+GitHub，建立Github博客参考：https://zhuanlan.zhihu.com/p/35668237       https://zhuanlan.zhihu.com/p/80140564  安装nodejs 安装Git 建立https://mingziday.github.io/ 安装Hexo在E:\blogworkspace目录下打开git bas">
+<meta name="twitter:title" content="docker-env">
+<meta name="twitter:description" content="Fedora安装Docker 执行安装命令yum -y install docker     检查版本docker –version   启动 docker 进程。$ sudo systemctl start docker  开机时自动启动 Docker$ sudo systemctl enable docker">
+<meta name="twitter:image" content="http://mingziday.github.io/2019/09/24/docker-env/1.JPG">
   
     <link rel="alternate" href="/atom.xml" title="mingziday的博客" type="application/atom+xml">
   
@@ -65,10 +67,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-hexo-blog" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-docker-env" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/09/22/hexo-blog/" class="article-date">
-  <time datetime="2019-09-21T16:20:08.000Z" itemprop="datePublished">2019-09-22</time>
+    <a href="/2019/09/24/docker-env/" class="article-date">
+  <time datetime="2019-09-23T16:07:18.000Z" itemprop="datePublished">2019-09-24</time>
 </a>
     
   </div>
@@ -79,7 +81,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hexo+GitHub，建立Github博客
+      docker-env
     </h1>
   
 
@@ -87,25 +89,26 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="一-Windows安装Hexo-GitHub，建立Github博客"><a href="#一-Windows安装Hexo-GitHub，建立Github博客" class="headerlink" title="一 Windows安装Hexo+GitHub，建立Github博客"></a>一 Windows安装Hexo+GitHub，建立Github博客</h2><p>参考：<a href="https://zhuanlan.zhihu.com/p/35668237" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/35668237</a><br>       <a href="https://zhuanlan.zhihu.com/p/80140564" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/80140564</a></p>
-<ol>
-<li>安装nodejs</li>
-<li>安装Git</li>
-<li>建立<a href="https://mingziday.github.io/">https://mingziday.github.io/</a></li>
-<li>安装Hexo<br>在E:\blogworkspace目录下打开git bash<br>npm i hexo-cli -g  安装Hexo<br>hexo init 初始化文件夹<br>npm install安装必备的组件。<br>npm i hexo-deployer-git 安装发布扩展<br>hexo new post “article title” 新建一篇文章<br>hexo g 生成静态网页<br>hexo s<br>打开本地服务器，浏览器预览 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a></li>
-<li>将本地的静态网页发布到GitHub<br>如下步骤生产sshkey<br>git config –global user.name “用户名”<br>git config –global user.email “邮箱名@qq.com”<br>ssh-keygen -t rsa -C “邮箱名@qq.com”<br>在github头像下面点击settings，再点击SSH and GPG keys，新建一个SSH，title任意，内容为：<br>cat ~/.ssh/id_rsa.pub<br>hexo cl 清理<br>hexo d 发布到github，第一次发布需要输入用户名密码<br>在 <a href="https://mingziday.github.io/">https://mingziday.github.io/</a> 预览</li>
+        <h2 id="Fedora安装Docker"><a href="#Fedora安装Docker" class="headerlink" title="Fedora安装Docker"></a>Fedora安装Docker</h2><ol>
+<li>执行安装命令<br>yum -y install docker </li>
 </ol>
-<h2 id="二-博客美化小技巧"><a href="#二-博客美化小技巧" class="headerlink" title="二 博客美化小技巧"></a>二 博客美化小技巧</h2><ol>
-<li>添加图片<br>_config.yml里的psot_asset_folder:设置为true<br>npm install hexo-asset-image –save  ：再用命令生成md博客时，会建立一个目录用来存图片，这个插件版本为005才行<br>注意图片文件的后缀，传到服务器自动变成了1.JPG</li>
+<p><img src="/2019/09/24/docker-env/1.JPG" alt></p>
+<ol start="2">
+<li><p>检查版本<br>docker –version </p>
+</li>
+<li><p>启动 docker 进程。<br>$ sudo systemctl start docker</p>
+</li>
+<li><p>开机时自动启动 Docker<br>$ sudo systemctl enable docker</p>
+</li>
 </ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mingziday.github.io/2019/09/22/hexo-blog/" data-id="ck0wm2eto0009sguicvfsmsrx" class="article-share-link">Share</a>
+      <a data-url="http://mingziday.github.io/2019/09/24/docker-env/" data-id="ck0wm2et80000sgui8k37qxiw" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/docker/">docker</a></li></ul>
 
     </footer>
   </div>
@@ -113,19 +116,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2019/09/22/java-env/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          java环境
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/09/21/env-step/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2019/09/23/my-target/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">开发环境准备</div>
+      <div class="article-nav-title">我的目标</div>
     </a>
   
 </nav>
