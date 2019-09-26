@@ -5,20 +5,20 @@
   
 
   
-  <title>开发目标 | mingziday的博客</title>
+  <title>Spring Cloud微服务实践(1)：Eureka服务注册和发现 | mingziday的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="后台：Spring Cloud 搭建微服务前台：Vue or AngularJS部署：Docker，自动部署开发工具代码托管：开发工程自动同步到GitHub+码云记录：Hexo+GitHub BlogPython">
-<meta name="keywords" content="Target">
+  <meta name="description" content="Eclipse创建父项目microservice-parent pom类型：&amp;lt;packaging&amp;gt;pom&amp;lt;/packaging&amp;gt; dependencyManagement 和 dependencies 的区别dependencyManagement 用于声明子项目如果使用该依赖并且没有明确指定版本的情况下，使用该版本  Eclipse子项目：eureka-server po">
+<meta name="keywords" content="微服务 Cloud">
 <meta property="og:type" content="article">
-<meta property="og:title" content="开发目标">
-<meta property="og:url" content="http://mingziday.github.io/2019/09/23/my-target/index.html">
+<meta property="og:title" content="Spring Cloud微服务实践(1)：Eureka服务注册和发现">
+<meta property="og:url" content="http://mingziday.github.io/2019/09/25/microservice1-eureka/index.html">
 <meta property="og:site_name" content="mingziday的博客">
-<meta property="og:description" content="后台：Spring Cloud 搭建微服务前台：Vue or AngularJS部署：Docker，自动部署开发工具代码托管：开发工程自动同步到GitHub+码云记录：Hexo+GitHub BlogPython">
+<meta property="og:description" content="Eclipse创建父项目microservice-parent pom类型：&amp;lt;packaging&amp;gt;pom&amp;lt;/packaging&amp;gt; dependencyManagement 和 dependencies 的区别dependencyManagement 用于声明子项目如果使用该依赖并且没有明确指定版本的情况下，使用该版本  Eclipse子项目：eureka-server po">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2019-09-24T15:56:37.120Z">
+<meta property="og:updated_time" content="2019-09-26T15:31:03.144Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="开发目标">
-<meta name="twitter:description" content="后台：Spring Cloud 搭建微服务前台：Vue or AngularJS部署：Docker，自动部署开发工具代码托管：开发工程自动同步到GitHub+码云记录：Hexo+GitHub BlogPython">
+<meta name="twitter:title" content="Spring Cloud微服务实践(1)：Eureka服务注册和发现">
+<meta name="twitter:description" content="Eclipse创建父项目microservice-parent pom类型：&amp;lt;packaging&amp;gt;pom&amp;lt;/packaging&amp;gt; dependencyManagement 和 dependencies 的区别dependencyManagement 用于声明子项目如果使用该依赖并且没有明确指定版本的情况下，使用该版本  Eclipse子项目：eureka-server po">
   
     <link rel="alternate" href="/atom.xml" title="mingziday的博客" type="application/atom+xml">
   
@@ -65,10 +65,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-my-target" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-microservice1-eureka" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/09/23/my-target/" class="article-date">
-  <time datetime="2019-09-23T14:24:43.000Z" itemprop="datePublished">2019-09-23</time>
+    <a href="/2019/09/25/microservice1-eureka/" class="article-date">
+  <time datetime="2019-09-25T14:10:32.000Z" itemprop="datePublished">2019-09-25</time>
 </a>
     
   </div>
@@ -79,7 +79,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      开发目标
+      Spring Cloud微服务实践(1)：Eureka服务注册和发现
     </h1>
   
 
@@ -87,14 +87,30 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="后台：Spring-Cloud-搭建微服务"><a href="#后台：Spring-Cloud-搭建微服务" class="headerlink" title="后台：Spring Cloud 搭建微服务"></a>后台：Spring Cloud 搭建微服务</h2><h2 id="前台：Vue-or-AngularJS"><a href="#前台：Vue-or-AngularJS" class="headerlink" title="前台：Vue or AngularJS"></a>前台：Vue or AngularJS</h2><h2 id="部署：Docker，自动部署"><a href="#部署：Docker，自动部署" class="headerlink" title="部署：Docker，自动部署"></a>部署：Docker，自动部署</h2><h2 id="开发工具"><a href="#开发工具" class="headerlink" title="开发工具"></a>开发工具</h2><h2 id="代码托管：开发工程自动同步到GitHub-码云"><a href="#代码托管：开发工程自动同步到GitHub-码云" class="headerlink" title="代码托管：开发工程自动同步到GitHub+码云"></a>代码托管：开发工程自动同步到GitHub+码云</h2><h2 id="记录：Hexo-GitHub-Blog"><a href="#记录：Hexo-GitHub-Blog" class="headerlink" title="记录：Hexo+GitHub Blog"></a>记录：Hexo+GitHub Blog</h2><h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2>
+        <h2 id="Eclipse创建父项目microservice-parent"><a href="#Eclipse创建父项目microservice-parent" class="headerlink" title="Eclipse创建父项目microservice-parent"></a>Eclipse创建父项目microservice-parent</h2><ol>
+<li>pom类型：&lt;packaging&gt;pom&lt;/packaging&gt;</li>
+<li>dependencyManagement 和 dependencies 的区别<br>dependencyManagement 用于声明子项目如果使用该依赖并且没有明确指定版本的情况下，使用该版本</li>
+</ol>
+<h2 id="Eclipse子项目：eureka-server"><a href="#Eclipse子项目：eureka-server" class="headerlink" title="Eclipse子项目：eureka-server"></a>Eclipse子项目：eureka-server</h2><ol>
+<li>pom增加依赖：spring-cloud-starter-netflix-eureka-server</li>
+<li>yml 文件生成和配置</li>
+<li>启动类EurekaServerApplication.java的写法</li>
+<li>启动</li>
+</ol>
+<h2 id="Eclipse子项目：eureka-client"><a href="#Eclipse子项目：eureka-client" class="headerlink" title="Eclipse子项目：eureka-client"></a>Eclipse子项目：eureka-client</h2><ol>
+<li>pom增加依赖：spring-cloud-starter-netflix-eureka-client</li>
+<li>yml 文件生成和配置</li>
+<li>启动类EurekaClientApplication.java的写法</li>
+<li>启动</li>
+</ol>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mingziday.github.io/2019/09/23/my-target/" data-id="ck10uuu35000bfgui6j1qigx5" class="article-share-link">Share</a>
+      <a data-url="http://mingziday.github.io/2019/09/25/microservice1-eureka/" data-id="ck10uuu2y0003fguisw2k9mb9" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Target/">Target</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/微服务-Cloud/">微服务 Cloud</a></li></ul>
 
     </footer>
   </div>
@@ -102,19 +118,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2019/09/24/docker-env/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Docker环境配置
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/09/22/python-env/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2019/09/24/docker-env/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Python环境配置</div>
+      <div class="article-nav-title">Docker环境配置</div>
     </a>
   
 </nav>
