@@ -86,25 +86,28 @@
       
         <h2 id="Eclipse创建父项目-microservice-parent"><a href="#Eclipse创建父项目-microservice-parent" class="headerlink" title="Eclipse创建父项目:microservice-parent"></a>Eclipse创建父项目:microservice-parent</h2><ol>
 <li>pom类型：&lt;packaging&gt;pom&lt;/packaging&gt;</li>
-<li>dependencyManagement 和 dependencies 的区别<br>dependencyManagement 用于声明子项目如果使用该依赖并且没有明确指定版本的情况下，使用该版本</li>
+<li>dependencyManagement 和 dependencies 的区别：<br>dependencyManagement 用于声明子项目如果使用该依赖并且没有明确指定版本的情况下，使用该版本</li>
 </ol>
-<h2 id="Eclipse子项目：eureka-server"><a href="#Eclipse子项目：eureka-server" class="headerlink" title="Eclipse子项目：eureka-server"></a>Eclipse子项目：eureka-server</h2><ol>
+<h2 id="Eclipse子项目：eureka-server"><a href="#Eclipse子项目：eureka-server" class="headerlink" title="Eclipse子项目：eureka-server"></a>Eclipse子项目：eureka-server</h2><p>eureka-server为服务注册中心</p>
+<ol>
 <li>pom增加依赖：spring-cloud-starter-netflix-eureka-server</li>
 <li>yml 文件生成和配置</li>
-<li>启动类EurekaServerApplication.java的写法</li>
+<li>启动类EurekaServerApplication.java<br>添加注解：<br>@SpringBootApplication<br>@EnableEurekaServer</li>
 <li>启动</li>
 </ol>
-<h2 id="Eclipse子项目：eureka-client"><a href="#Eclipse子项目：eureka-client" class="headerlink" title="Eclipse子项目：eureka-client"></a>Eclipse子项目：eureka-client</h2><ol>
+<h2 id="Eclipse子项目：eureka-client"><a href="#Eclipse子项目：eureka-client" class="headerlink" title="Eclipse子项目：eureka-client"></a>Eclipse子项目：eureka-client</h2><p>eureka-client其实就是对外提供服务的具体应用，目前我还没想提供什么服务，就暂时取这个名字</p>
+<ol>
 <li>pom增加依赖：spring-cloud-starter-netflix-eureka-client</li>
 <li>yml 文件生成和配置</li>
-<li>启动类EurekaClientApplication.java的写法</li>
+<li>启动类EurekaClientApplication.java<br>添加注解：<br>@SpringBootApplication<br>//@EnableEurekaClient 该注解在Spring Cloud Edgware以及更高版本中可以不使用</li>
 <li>启动</li>
+<li>访问 <a href="http://localhost:10001/，在nstances" target="_blank" rel="noopener">http://localhost:10001/，在nstances</a> currently registered with Eureka栏目中可以看到注册到服务中心的微服务<br><img src="/2019/09/25/microservice1-eureka/1.JPG" alt></li>
 </ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mingziday.github.io/2019/09/25/microservice1-eureka/" data-id="ck10v0bn00009k8ui1jn5crav" class="article-share-link">Share</a>
+      <a data-url="http://mingziday.github.io/2019/09/25/microservice1-eureka/" data-id="ck12a2y320004r4uik10k80wb" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/微服务-Cloud/">微服务 Cloud</a></li></ul>
@@ -154,7 +157,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mingziday.github.io/2019/09/24/docker-env/" data-id="ck10v0bmm0000k8uigwbhcd3b" class="article-share-link">Share</a>
+      <a data-url="http://mingziday.github.io/2019/09/24/docker-env/" data-id="ck12a2y2h0000r4uies43j09d" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Docker/">Docker</a></li></ul>
@@ -192,7 +195,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mingziday.github.io/2019/09/23/my-target/" data-id="ck10v0bmy0008k8ui2yotgteu" class="article-share-link">Share</a>
+      <a data-url="http://mingziday.github.io/2019/09/23/my-target/" data-id="ck12a2y370008r4uie1g5nbev" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Target/">Target</a></li></ul>
@@ -234,7 +237,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mingziday.github.io/2019/09/22/python-env/" data-id="ck10v0bn9000jk8ui3r6he2mx" class="article-share-link">Share</a>
+      <a data-url="http://mingziday.github.io/2019/09/22/python-env/" data-id="ck12a2y38000br4uimj4lll8f" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Pythons/">Pythons</a></li></ul>
@@ -291,7 +294,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mingziday.github.io/2019/09/22/java-env/" data-id="ck10v0bmx0005k8uiv5xya7dl" class="article-share-link">Share</a>
+      <a data-url="http://mingziday.github.io/2019/09/22/java-env/" data-id="ck12a2y340006r4uilotdry14" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li></ul>
@@ -340,7 +343,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mingziday.github.io/2019/09/22/hexo-blog/" data-id="ck10v0bmv0004k8ui5al7lux9" class="article-share-link">Share</a>
+      <a data-url="http://mingziday.github.io/2019/09/22/hexo-blog/" data-id="ck12a2y360007r4ui3ra85lxf" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
@@ -409,7 +412,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mingziday.github.io/2019/09/21/env-step/" data-id="ck10v0bmq0001k8uihtvee3ge" class="article-share-link">Share</a>
+      <a data-url="http://mingziday.github.io/2019/09/21/env-step/" data-id="ck12a2y310003r4uisg1x3ue5" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Fedora/">Fedora</a></li></ul>
@@ -460,7 +463,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mingziday.github.io/2019/09/21/hello-world/" data-id="ck10v0bmu0003k8uix464jxrq" class="article-share-link">Share</a>
+      <a data-url="http://mingziday.github.io/2019/09/21/hello-world/" data-id="ck12a2y3a000cr4uigd7kobe5" class="article-share-link">Share</a>
       
       
     </footer>
