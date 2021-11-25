@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>mingziday实践微服务过程记录</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="mingziday实践微服务过程记录">
+<meta property="og:url" content="http://mingziday.github.io/index.html">
+<meta property="og:site_name" content="mingziday实践微服务过程记录">
+<meta property="og:locale" content="zh">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="mingziday实践微服务过程记录">
+  
+    <link rel="alternate" href="/atom.xml" title="mingziday实践微服务过程记录" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">mingziday实践微服务过程记录</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://mingziday.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-我的爱好" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/11/25/我的爱好/" class="article-date">
+  <time datetime="2021-11-25T14:22:27.000Z" itemprop="datePublished">2021-11-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/11/25/我的爱好/">我的爱好</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mingziday.github.io/2021/11/25/我的爱好/" data-id="ckwf4ca9t000f1st8h3snmmed" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-git-lean" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/11/19/git-lean/" class="article-date">
+  <time datetime="2019-11-19T14:43:48.000Z" itemprop="datePublished">2019-11-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/19/git-lean/">git学习记录</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一-提交"><a href="#一-提交" class="headerlink" title="一 提交"></a>一 提交</h2><ol>
+<li>git add file1.txt</li>
+<li>git commit -m “注释内容”</li>
+</ol>
+<h2 id="二-修改注释"><a href="#二-修改注释" class="headerlink" title="二 修改注释"></a>二 修改注释</h2><p><a href="https://www.jianshu.com/p/098d85a58bf1" target="_blank" rel="noopener">https://www.jianshu.com/p/098d85a58bf1</a></p>
+<ol>
+<li>git commit –amend   修改最近一次提交</li>
+<li>git rebase -i HEAD~3  现实最近三次修改<br>把要修改的注释前面的pick换成edit。方法就是上面说的编辑方式：i—编辑，把pick换成edit—Esc—:wq.</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mingziday.github.io/2019/11/19/git-lean/" data-id="ckwf4ca9m00081st8h0c8ejmz" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-microservice2-ha" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/09/27/microservice2-ha/" class="article-date">
+  <time datetime="2019-09-27T15:30:46.000Z" itemprop="datePublished">2019-09-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/27/microservice2-ha/">Spring Cloud微服务实践(1)：Eureka配置高可用</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mingziday.github.io/2019/09/27/microservice2-ha/" data-id="ckwf4ca9o00091st8xfx2c0bu" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/微服务-Cloud/">微服务 Cloud</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-microservice1-eureka" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/09/25/microservice1-eureka/" class="article-date">
+  <time datetime="2019-09-25T14:10:32.000Z" itemprop="datePublished">2019-09-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/25/microservice1-eureka/">Spring Cloud微服务实践(1)：Eureka服务注册和发现</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Eclipse创建父项目-microservice-parent"><a href="#Eclipse创建父项目-microservice-parent" class="headerlink" title="Eclipse创建父项目:microservice-parent"></a>Eclipse创建父项目:microservice-parent</h2><ol>
+<li>pom类型：&lt;packaging&gt;pom&lt;/packaging&gt;</li>
+<li>dependencyManagement 和 dependencies 的区别：<br>dependencyManagement 用于声明子项目如果使用该依赖并且没有明确指定版本的情况下，使用该版本</li>
+</ol>
+<h2 id="Eclipse子项目：eureka-server"><a href="#Eclipse子项目：eureka-server" class="headerlink" title="Eclipse子项目：eureka-server"></a>Eclipse子项目：eureka-server</h2><p>eureka-server为服务注册中心</p>
+<ol>
+<li>pom增加依赖：spring-cloud-starter-netflix-eureka-server</li>
+<li>yml 文件生成和配置</li>
+<li>启动类EurekaServerApplication.java<br>添加注解：<br>@SpringBootApplication<br>@EnableEurekaServer</li>
+<li>启动</li>
+</ol>
+<h2 id="Eclipse子项目：eureka-client"><a href="#Eclipse子项目：eureka-client" class="headerlink" title="Eclipse子项目：eureka-client"></a>Eclipse子项目：eureka-client</h2><p>eureka-client其实就是对外提供服务的具体应用，目前我还没想提供什么服务，就暂时取这个名字</p>
+<ol>
+<li>pom增加依赖：spring-cloud-starter-netflix-eureka-client</li>
+<li>yml 文件生成和配置</li>
+<li>启动类EurekaClientApplication.java<br>添加注解：<br>@SpringBootApplication<br>//@EnableEurekaClient 该注解在Spring Cloud Edgware以及更高版本中可以不使用</li>
+<li>启动</li>
+<li>访问 <a href="http://localhost:10001/，在nstances" target="_blank" rel="noopener">http://localhost:10001/，在nstances</a> currently registered with Eureka栏目中可以看到注册到服务中心的微服务<br><img src="/2019/09/25/microservice1-eureka/1.JPG" alt></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mingziday.github.io/2019/09/25/microservice1-eureka/" data-id="ckwf4caa0000q1st8jf2vvzx6" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/微服务-Cloud/">微服务 Cloud</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-docker-env" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/09/24/docker-env/" class="article-date">
+  <time datetime="2019-09-23T16:07:18.000Z" itemprop="datePublished">2019-09-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/24/docker-env/">Docker环境配置</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Fedora安装Docker"><a href="#Fedora安装Docker" class="headerlink" title="Fedora安装Docker"></a>Fedora安装Docker</h2><ol>
+<li>执行安装命令<br>yum -y install docker </li>
+</ol>
+<p><img src="/2019/09/24/docker-env/1.JPG" alt></p>
+<ol start="2">
+<li><p>检查版本<br>docker –version </p>
+</li>
+<li><p>启动 docker 进程。<br>$ sudo systemctl start docker</p>
+</li>
+<li><p>开机时自动启动 Docker<br>$ sudo systemctl enable docker</p>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mingziday.github.io/2019/09/24/docker-env/" data-id="ckwf4ca9h00031st8uv9kpkrm" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Docker/">Docker</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-my-target" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/09/23/my-target/" class="article-date">
+  <time datetime="2019-09-23T14:24:43.000Z" itemprop="datePublished">2019-09-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/23/my-target/">开发目标</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="后台：Spring-Cloud-搭建微服务"><a href="#后台：Spring-Cloud-搭建微服务" class="headerlink" title="后台：Spring Cloud 搭建微服务"></a>后台：Spring Cloud 搭建微服务</h2><h2 id="前台：Vue-or-AngularJS"><a href="#前台：Vue-or-AngularJS" class="headerlink" title="前台：Vue or AngularJS"></a>前台：Vue or AngularJS</h2><h2 id="部署：Docker，自动部署"><a href="#部署：Docker，自动部署" class="headerlink" title="部署：Docker，自动部署"></a>部署：Docker，自动部署</h2><h2 id="开发工具"><a href="#开发工具" class="headerlink" title="开发工具"></a>开发工具</h2><h2 id="代码托管：开发工程自动同步到GitHub-码云"><a href="#代码托管：开发工程自动同步到GitHub-码云" class="headerlink" title="代码托管：开发工程自动同步到GitHub+码云"></a>代码托管：开发工程自动同步到GitHub+码云</h2><h2 id="记录：Hexo-GitHub-Blog"><a href="#记录：Hexo-GitHub-Blog" class="headerlink" title="记录：Hexo+GitHub Blog"></a>记录：Hexo+GitHub Blog</h2><h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mingziday.github.io/2019/09/23/my-target/" data-id="ckwf4ca9p000b1st8d7kirdab" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Target/">Target</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-python-env" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/09/22/python-env/" class="article-date">
+  <time datetime="2019-09-22T14:30:18.000Z" itemprop="datePublished">2019-09-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/22/python-env/">Python环境配置</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="安装PyCharm专业版"><a href="#安装PyCharm专业版" class="headerlink" title="安装PyCharm专业版"></a>安装PyCharm专业版</h2><p><a href="https://www.52pojie.cn/thread-961836-1-1.html" target="_blank" rel="noopener">https://www.52pojie.cn/thread-961836-1-1.html</a><br>激活</p>
+<h2 id="SSH链接远程解释器"><a href="#SSH链接远程解释器" class="headerlink" title="SSH链接远程解释器"></a>SSH链接远程解释器</h2><p>Settings/Preferences对话框，选择Project Interpreter页面，单击设置按钮然后选择Add Remote<br><img src="/2019/09/22/python-env/1.JPG" alt><br>测试通过</p>
+<h2 id="汉化"><a href="#汉化" class="headerlink" title="汉化"></a>汉化</h2><p>暂时不用</p>
+<h2 id="自动同步"><a href="#自动同步" class="headerlink" title="自动同步"></a>自动同步</h2><p><a href="https://cloud.tencent.com/developer/article/1013057" target="_blank" rel="noopener">https://cloud.tencent.com/developer/article/1013057</a><br>暂时不用</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mingziday.github.io/2019/09/22/python-env/" data-id="ckwf4ca9q000d1st81jpyt7fs" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Pythons/">Pythons</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-java-env" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/09/22/java-env/" class="article-date">
+  <time datetime="2019-09-22T14:29:56.000Z" itemprop="datePublished">2019-09-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/22/java-env/">Java环境配置</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="JDK13安装"><a href="#JDK13安装" class="headerlink" title="JDK13安装"></a>JDK13安装</h2><ol>
+<li>下载安装jdk-13_windows-x64_bin.exe</li>
+<li>配置环境变量%JAVA_HOME%,maven需要这个环境变量</li>
+</ol>
+<h2 id="MAVEN安装"><a href="#MAVEN安装" class="headerlink" title="MAVEN安装"></a>MAVEN安装</h2><ol>
+<li>安装apache-maven-3.6.2-bin.zip</li>
+<li>配置环境变量%MAVEN_HOME%</li>
+<li>设置本地仓库地址：E:\repository</li>
+<li>设置远程仓库阿里镜像：<br> &lt;mirror&gt;<br>   &lt;id&gt;alimaven&lt;/id&gt;<br>   &lt;name&gt;aliyun maven&lt;/name&gt;<br>   &lt;url&gt;<a href="http://maven.aliyun.com/nexus/content/groups/public/&lt;/url" target="_blank" rel="noopener">http://maven.aliyun.com/nexus/content/groups/public/&lt;/url</a>&gt;<br>   &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;<br> &lt;/mirror&gt;</li>
+</ol>
+<h2 id="Eclipse安装（必须要有JDK）"><a href="#Eclipse安装（必须要有JDK）" class="headerlink" title="Eclipse安装（必须要有JDK）"></a>Eclipse安装（必须要有JDK）</h2><p>远程链接Linux的JDK是不行的，但是调试的时候应该可以</p>
+<ol>
+<li><p>安装eclipse-inst-win64.exe<br><img src="/2019/09/22/java-env/1.JPG" alt></p>
+</li>
+<li><p>安装Spring插件<br><img src="/2019/09/22/java-env/2.JPG" alt></p>
+</li>
+<li><p>配置Eclipse的MAVEN参数<br>settings文件路径，D:\service\apache-maven-3.6.2\conf\settings.xml</p>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mingziday.github.io/2019/09/22/java-env/" data-id="ckwf4ca9j00041st8cbnf2s55" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hexo-blog" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/09/22/hexo-blog/" class="article-date">
+  <time datetime="2019-09-21T16:20:08.000Z" itemprop="datePublished">2019-09-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/22/hexo-blog/">Hexo+GitHub，建立Github博客</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一-Windows安装Hexo-GitHub，建立Github博客"><a href="#一-Windows安装Hexo-GitHub，建立Github博客" class="headerlink" title="一 Windows安装Hexo+GitHub，建立Github博客"></a>一 Windows安装Hexo+GitHub，建立Github博客</h2><p>参考：<br><a href="https://zhuanlan.zhihu.com/p/35668237" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/35668237</a><br><a href="https://zhuanlan.zhihu.com/p/80140564" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/80140564</a></p>
+<ol>
+<li>安装nodejs</li>
+<li>安装Git、安装TortoiseGit 2.9.0(64-bit)、安装汉化包TortoiseGit-LanguagePack-2.9.0.0-64bit-zh_CN </li>
+<li>建立<a href="https://mingziday.github.io/">https://mingziday.github.io/</a></li>
+<li>安装Hexo<br>在E:\blogworkspace目录下打开git bash<br>npm i hexo-cli -g  安装Hexo<br>hexo init 初始化文件夹<br>npm install安装必备的组件。<br>npm i hexo-deployer-git 安装发布扩展<br>hexo new post “article title” 新建一篇文章<br>hexo g 生成静态网页<br>hexo s<br>打开本地服务器，浏览器预览 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a></li>
+<li>将本地的静态网页发布到GitHub<br>如下步骤生产sshkey<br>git config –global user.name “用户名”<br>git config –global user.email “邮箱名@qq.com”<br>ssh-keygen -t rsa -C “邮箱名@qq.com”<br>在github头像下面点击settings，再点击SSH and GPG keys，新建一个SSH，title任意，内容为：<br>cat ~/.ssh/id_rsa.pub<br>hexo cl 清理<br>hexo d 发布到github，第一次发布需要输入用户名密码<br>在 <a href="https://mingziday.github.io/">https://mingziday.github.io/</a> 预览</li>
+</ol>
+<h2 id="二-博客美化小技巧"><a href="#二-博客美化小技巧" class="headerlink" title="二 博客美化小技巧"></a>二 博客美化小技巧</h2><ol>
+<li>添加图片<br>_config.yml里的psot_asset_folder:设置为true<br>npm install hexo-asset-image –save  ：再用命令生成md博客时，会建立一个目录用来存图片，这个插件版本为005才行<br>注意图片文件的后缀，传到服务器自动变成了1.JPG</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mingziday.github.io/2019/09/22/hexo-blog/" data-id="ckwf4ca9e00011st87439xr1r" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-env-step" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/09/21/env-step/" class="article-date">
+  <time datetime="2019-09-21T13:53:06.000Z" itemprop="datePublished">2019-09-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/21/env-step/">开发环境准备</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="硬件准备："><a href="#硬件准备：" class="headerlink" title="硬件准备："></a>硬件准备：</h2><p>一个老的toshiba东芝笔记本，硬盘200G，内存2G，安装fedora服务器<br>一个新的Dell笔记本，硬盘200G，内存4G，安装windows 10家庭版，作为开发机</p>
+<h2 id="一-安装Fedora30"><a href="#一-安装Fedora30" class="headerlink" title="一 安装Fedora30"></a>一 安装Fedora30</h2><ol>
+<li>下载Fedora Server  30，地址：<a href="http://getfedora.org" target="_blank" rel="noopener">http://getfedora.org</a></li>
+<li>用PowerIOS制作USB启动盘，用UltraISO制作的时候没有成功</li>
+<li>从U盘安装Fedora，注意语言、分区、软件选择、网络配置</li>
+<li>安装完成之后通过网络远程管理服务器：<a href="https://192.168.31.236:9090/system" target="_blank" rel="noopener">https://192.168.31.236:9090/system</a><br><img src="/2019/09/21/env-step/1.JPG" alt></li>
+</ol>
+<h2 id="二-安装图形界面"><a href="#二-安装图形界面" class="headerlink" title="二 安装图形界面"></a>二 安装图形界面</h2><p>默认Fedora Server 是不安装图形界面的，renlevel=1，用如下命令安装GNOME<br>yum groups install  “GNOME”<br>需要安装518个软件包，安装完成后启动：<br>startx<br>启动图形界面看起来还不错，以后应该没啥用</p>
+<h2 id="三-解决笔记本合上盖子后Fedora网络自动断开的问题"><a href="#三-解决笔记本合上盖子后Fedora网络自动断开的问题" class="headerlink" title="三 解决笔记本合上盖子后Fedora网络自动断开的问题"></a>三 解决笔记本合上盖子后Fedora网络自动断开的问题</h2><p>笔记本安装Fedora之后，之后都是通过ssh远程管理，要保证网络一直能通才行</p>
+<ol>
+<li>修改配置文件/etc/systemd/logind.conf<br>HandleLidSwitch=ignore</li>
+<li>重启服务生效<br>systemctl restart systemd-logind.service</li>
+</ol>
+<h2 id="四-配置Fedora-SSH"><a href="#四-配置Fedora-SSH" class="headerlink" title="四 配置Fedora SSH"></a>四 配置Fedora SSH</h2><ol>
+<li>检查ssh安装情况，默认已经安装<br>rpm -qa | grep openssh-server</li>
+<li>修改配置文件/etc/ssh/sshd_conf，打开下面内容的注释<br>Port 22<br>Protocol 2,1</li>
+<li>重启ssh服务<br>systemctl restart sshd</li>
+<li>设置sshd开机启动（未设置）<br>systemctl enable sshd</li>
+<li>防火墙（内网访问，未设置）<br>/etc/syscofig/iptables</li>
+</ol>
+<p>-A INPUT -m state –state NEW -p tcp –dport 22 -j ACCEPT<br>systemctl restart iptables</p>
+<h2 id="五-Windows-安装SSH工具"><a href="#五-Windows-安装SSH工具" class="headerlink" title="五 Windows 安装SSH工具"></a>五 Windows 安装SSH工具</h2><ol>
+<li>下载Xmanager（未激活）</li>
+<li>配置XShell，测试链接通过</li>
+</ol>
+<h2 id="六-Windows安装必备工具"><a href="#六-Windows安装必备工具" class="headerlink" title="六 Windows安装必备工具"></a>六 Windows安装必备工具</h2><ol>
+<li>notepad++</li>
+<li>clover</li>
+<li>Wox</li>
+<li>everything</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mingziday.github.io/2019/09/21/env-step/" data-id="ckwf4ca9900001st88sgozs7w" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Fedora/">Fedora</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+  </nav>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Docker/">Docker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Fedora/">Fedora</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/">Java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Pythons/">Pythons</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Target/">Target</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/微服务-Cloud/">微服务 Cloud</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Docker/" style="font-size: 10px;">Docker</a> <a href="/tags/Fedora/" style="font-size: 10px;">Fedora</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/Pythons/" style="font-size: 10px;">Pythons</a> <a href="/tags/Target/" style="font-size: 10px;">Target</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/微服务-Cloud/" style="font-size: 20px;">微服务 Cloud</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">November 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/11/25/我的爱好/">我的爱好</a>
+          </li>
+        
+          <li>
+            <a href="/2019/11/19/git-lean/">git学习记录</a>
+          </li>
+        
+          <li>
+            <a href="/2019/09/27/microservice2-ha/">Spring Cloud微服务实践(1)：Eureka配置高可用</a>
+          </li>
+        
+          <li>
+            <a href="/2019/09/25/microservice1-eureka/">Spring Cloud微服务实践(1)：Eureka服务注册和发现</a>
+          </li>
+        
+          <li>
+            <a href="/2019/09/24/docker-env/">Docker环境配置</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2021 mingziday<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

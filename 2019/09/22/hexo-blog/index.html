@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo+GitHub，建立Github博客 | mingziday实践微服务过程记录</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="一 Windows安装Hexo+GitHub，建立Github博客参考：https://zhuanlan.zhihu.com/p/35668237https://zhuanlan.zhihu.com/p/80140564  安装nodejs 安装Git、安装TortoiseGit 2.9.0(64-bit)、安装汉化包TortoiseGit-LanguagePack-2.9.0.0-64bit-z">
+<meta name="keywords" content="Hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo+GitHub，建立Github博客">
+<meta property="og:url" content="http://mingziday.github.io/2019/09/22/hexo-blog/index.html">
+<meta property="og:site_name" content="mingziday实践微服务过程记录">
+<meta property="og:description" content="一 Windows安装Hexo+GitHub，建立Github博客参考：https://zhuanlan.zhihu.com/p/35668237https://zhuanlan.zhihu.com/p/80140564  安装nodejs 安装Git、安装TortoiseGit 2.9.0(64-bit)、安装汉化包TortoiseGit-LanguagePack-2.9.0.0-64bit-z">
+<meta property="og:locale" content="zh">
+<meta property="og:updated_time" content="2019-11-19T14:39:59.172Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo+GitHub，建立Github博客">
+<meta name="twitter:description" content="一 Windows安装Hexo+GitHub，建立Github博客参考：https://zhuanlan.zhihu.com/p/35668237https://zhuanlan.zhihu.com/p/80140564  安装nodejs 安装Git、安装TortoiseGit 2.9.0(64-bit)、安装汉化包TortoiseGit-LanguagePack-2.9.0.0-64bit-z">
+  
+    <link rel="alternate" href="/atom.xml" title="mingziday实践微服务过程记录" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">mingziday实践微服务过程记录</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://mingziday.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-hexo-blog" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/09/22/hexo-blog/" class="article-date">
+  <time datetime="2019-09-21T16:20:08.000Z" itemprop="datePublished">2019-09-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Hexo+GitHub，建立Github博客
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一-Windows安装Hexo-GitHub，建立Github博客"><a href="#一-Windows安装Hexo-GitHub，建立Github博客" class="headerlink" title="一 Windows安装Hexo+GitHub，建立Github博客"></a>一 Windows安装Hexo+GitHub，建立Github博客</h2><p>参考：<br><a href="https://zhuanlan.zhihu.com/p/35668237" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/35668237</a><br><a href="https://zhuanlan.zhihu.com/p/80140564" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/80140564</a></p>
+<ol>
+<li>安装nodejs</li>
+<li>安装Git、安装TortoiseGit 2.9.0(64-bit)、安装汉化包TortoiseGit-LanguagePack-2.9.0.0-64bit-zh_CN </li>
+<li>建立<a href="https://mingziday.github.io/">https://mingziday.github.io/</a></li>
+<li>安装Hexo<br>在E:\blogworkspace目录下打开git bash<br>npm i hexo-cli -g  安装Hexo<br>hexo init 初始化文件夹<br>npm install安装必备的组件。<br>npm i hexo-deployer-git 安装发布扩展<br>hexo new post “article title” 新建一篇文章<br>hexo g 生成静态网页<br>hexo s<br>打开本地服务器，浏览器预览 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a></li>
+<li>将本地的静态网页发布到GitHub<br>如下步骤生产sshkey<br>git config –global user.name “用户名”<br>git config –global user.email “邮箱名@qq.com”<br>ssh-keygen -t rsa -C “邮箱名@qq.com”<br>在github头像下面点击settings，再点击SSH and GPG keys，新建一个SSH，title任意，内容为：<br>cat ~/.ssh/id_rsa.pub<br>hexo cl 清理<br>hexo d 发布到github，第一次发布需要输入用户名密码<br>在 <a href="https://mingziday.github.io/">https://mingziday.github.io/</a> 预览</li>
+</ol>
+<h2 id="二-博客美化小技巧"><a href="#二-博客美化小技巧" class="headerlink" title="二 博客美化小技巧"></a>二 博客美化小技巧</h2><ol>
+<li>添加图片<br>_config.yml里的psot_asset_folder:设置为true<br>npm install hexo-asset-image –save  ：再用命令生成md博客时，会建立一个目录用来存图片，这个插件版本为005才行<br>注意图片文件的后缀，传到服务器自动变成了1.JPG</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mingziday.github.io/2019/09/22/hexo-blog/" data-id="ckwf4ca9e00011st87439xr1r" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/09/22/java-env/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Java环境配置
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/09/21/env-step/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">开发环境准备</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Docker/">Docker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Fedora/">Fedora</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/">Java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Pythons/">Pythons</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Target/">Target</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/微服务-Cloud/">微服务 Cloud</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Docker/" style="font-size: 10px;">Docker</a> <a href="/tags/Fedora/" style="font-size: 10px;">Fedora</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/Pythons/" style="font-size: 10px;">Pythons</a> <a href="/tags/Target/" style="font-size: 10px;">Target</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/微服务-Cloud/" style="font-size: 20px;">微服务 Cloud</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">November 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/11/25/我的爱好/">我的爱好</a>
+          </li>
+        
+          <li>
+            <a href="/2019/11/19/git-lean/">git学习记录</a>
+          </li>
+        
+          <li>
+            <a href="/2019/09/27/microservice2-ha/">Spring Cloud微服务实践(1)：Eureka配置高可用</a>
+          </li>
+        
+          <li>
+            <a href="/2019/09/25/microservice1-eureka/">Spring Cloud微服务实践(1)：Eureka服务注册和发现</a>
+          </li>
+        
+          <li>
+            <a href="/2019/09/24/docker-env/">Docker环境配置</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2021 mingziday<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
